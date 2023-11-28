@@ -1,11 +1,4 @@
 (function() {
-    // Inject the Google Fonts link into the head of the HTML
-    const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
-
-(function() {
     const widgetHTML = `
         <div id="charity-widget" style="position: fixed; bottom: 10px; left: 10px; z-index: 1000;">
             <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/5df520e1b0ebe722d03f9f82_dios_logo_cmyk_vit.png" style="width: 100px; height: 100px; cursor: pointer;">
