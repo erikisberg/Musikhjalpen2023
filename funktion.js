@@ -1,16 +1,28 @@
-(function() {
+document.addEventListener('DOMContentLoaded', (event) => {
+    (function() {
 
     const alertHTML = `
     <div id="custom-alert" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #009D7E; color: white; padding: 20px; border-radius: 5px; display: none; opacity: 0; transition: opacity 0.5s; z-index: 1040; font-family: 'Open Sans', sans-serif;">
         Swish-nummer kopierat! Klistra in och swisha!
     </div>`;
 
+    const mobileStyles = `
+    <style>
+        @media (max-width: 600px) {
+            #charity-popup {
+                width: 90vw;
+            }
+        }
+    </style>`;
+
+    document.head.insertAdjacentHTML('beforeend', mobileStyles);
+
     const widgetHTML = `
         <div id="charity-widget" style="position: fixed; bottom: 10px; left: 10px; z-index: 1000;">
             <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/6566f5a08416eed5e53cc30e_MH%20Stickers%20Vi%20stodjer%20-%20original%20(957673).png" style="width: 100px; height: 100px; cursor: pointer;">
         </div>
         <div id="charity-overlay" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1001;">
-            <div id="charity-popup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: transparent url('https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/656734d044fdc9f3c641c63a_background.webp') no-repeat center center; background-size: cover; max-width: 650px; padding: 3REM; padding-bottom: 4REM; font-family: 'Open Sans', sans-serif; text-align: center; justify-content: center;">
+            <div id="charity-popup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: transparent url('https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/656734d044fdc9f3c641c63a_background.webp') no-repeat center center; background-size: cover; max-width: 650px; padding: 4REM; font-family: 'Open Sans', sans-serif; text-align: center; justify-content: center; border-radius: 4px;">
                 <span id="close-popup" style="position: absolute; top: 10px; right: 10px; cursor: pointer; color: white;">Stäng</span>
                 <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/6565dfca12f98697371601ea_download-1.webp" style="width: 50%; display: block; margin: auto;">
                 <h1 style="text-align: center; font-size: 31px; color: white;">Vi stödjer <br> Musikhjälpen 2023</h1>
@@ -20,6 +32,7 @@
                 <a href="https://bossan.musikhjalpen.se/" target="blank" id="second-button" style="display: inline-block; padding: 10px 20px; background-color: #009D7E; color: white; text-decoration: none; text-align: center; border-radius: 5px;">Donera via webben</a>
             </div>
         </div>`;
+        
 
         document.body.insertAdjacentHTML('beforeend', widgetHTML);
         document.body.insertAdjacentHTML('beforeend', alertHTML);
@@ -64,4 +77,6 @@
                 this.style.display = "none";
             }
         });
+        
     })();
+});
