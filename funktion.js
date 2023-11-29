@@ -7,13 +7,8 @@
             <div id="charity-popup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; max-width: 700px; padding: 20px; font-family: 'Open Sans', sans-serif; text-align: center;">
                 <span id="close-popup" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">Stäng</span>
                 <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/6565dfca12f98697371601ea_download-1.webp" style="width: 50%; display: block; margin: auto;">
-                <h1 style="text-align: center;">Vi stödjer Musikhjälpen 2023</h1>
-                <p>Mat är en mänsklig rättighet. Trots det dör människor runtom i världen varje dag till följd av undernäring. Omkring var tionde människa vet inte när eller vad de kommer att äta nästa gång. Genom Musikhjälpen 2023 kan alla vara med och bidra till kampen mot hungern.
-
-                Den värsta hungerkrisen i modern tid
-                För många i Sverige är hunger när magen kurrar innan en sen lunch eller dåligt humör när blodsockret sjunkit. För de miljontals människor som lever där hungern är akut handlar det om att överleva dagen. Upp till 783 miljoner människor är drabbade av hunger och över 40 miljoner lever på gränsen till svält.
-                
-                Nästan hälften av alla dödsfall bland barn under fem år beror på undernäring. Skolbänkar står tomma för att elever är för hungriga för att gå till skolan och bönder ser hur extremväder förstör skörd efter skörd.</p>
+                <h1 style="text-align: center; font-size: 31px;">Vi stödjer Musikhjälpen 2023</h1>
+                <p style="font-size: 13px;">Mat är en mänsklig rättighet. Trots det dör människor runtom i världen varje dag till följd av undernäring. Omkring var tionde människa vet inte när eller vad de kommer att äta nästa gång. Genom Musikhjälpen 2023 kan alla vara med och bidra till kampen mot hungern.</p>
                 <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/6565dfcda76b3dab582286a1_8889ca0e-5755-4e72-8c78-f4dbbafa535b.png" style="max-width: 200px; display: block; margin: auto;"> 
                 <a href="#" id="copy-phone" style="display: inline-block; padding: 10px 20px; background-color: black; color: white; text-decoration: none; text-align: center; border-radius: 5px; margin: 20px auto;">Kopiera swish-nummer</a>
             </div>
