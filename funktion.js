@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     (function() {
 
     const alertHTML = `
-    <div id="custom-alert" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #009D7E; color: white; padding: 20px; border-radius: 5px; display: none; opacity: 0; transition: opacity 0.5s; z-index: 1040; font-family: 'Open Sans', sans-serif;">
+    <div id="custom-alert" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #009D7E; color: white; padding: 20px; border-radius: 5px; display: none; opacity: 0; transition: opacity 0.5s; z-index: 1040; font-family: 'Open Sans', sans-serif; text-align:center; ">
         Swish-nummer kopierat! Klistra in och swisha!
     </div>`;
 
@@ -10,7 +10,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     <style>
         @media (max-width: 600px) {
             #charity-popup {
-                width: 90vw;
+                width: 90%;
+                padding: 1REM;
+            }
+            #buttoncontainer {
+                flex-direction: column;
+            }
+            #close-popup {
+                padding-right: 1rem;
             }
         }
     </style>`;
@@ -19,15 +26,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const widgetHTML = `
         <div id="charity-widget" style="position: fixed; bottom: 10px; left: 10px; z-index: 1000;">
-            <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/65687129fdcbe0a68b025bc3_Widget1-02-1.gif" style="width: 100px; height: 100px; cursor: pointer;">
+            <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/65687a14bbeeaf30f62ab662_Widget1-02-1%20(1).gif" style="width: 100px; height: auto; cursor: pointer;">
         </div>
         <div id="charity-overlay" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1001;">
-            <div id="charity-popup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: transparent url('https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/656734d044fdc9f3c641c63a_background.webp') no-repeat center center; background-size: cover; max-width: 650px; padding: 4REM; font-family: 'Open Sans', sans-serif; text-align: center; justify-content: center; border-radius: 4px;">
+            <div id="charity-popup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: transparent url('https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/656734d044fdc9f3c641c63a_background.webp') no-repeat center center; background-size: cover; max-width: 550px; padding: 10%; font-family: 'Open Sans', sans-serif; text-align: center; justify-content: center; border-radius: 4px;">
                 <span id="close-popup" style="position: absolute; top: 10px; right: 10px; cursor: pointer; color: white;">Stäng</span>
                 <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/6565dfca12f98697371601ea_download-1.webp" style="width: 50%; display: block; margin: auto;">
                 <h1 style="text-align: center; font-size: 31px; color: white;">Vi stödjer <br> Musikhjälpen 2023</h1>
                 <p style="font-size: 19px; color: white; max-width: 450px; margin: auto;">Mat är en mänsklig rättighet. Trots det dör människor runtom i världen varje dag till följd av undernäring. Omkring var tionde människa vet inte när eller vad de kommer att äta nästa gång. Genom Musikhjälpen 2023 kan alla vara med och bidra till kampen mot hungern.</p>
-                <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
+                <div id="buttoncontainer" style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
                 <a href="#" id="copy-phone" style="display: inline-block; padding: 10px 20px; background-color: #009D7E; color: white; text-decoration: none; text-align: center; border-radius: 5px;">Kopiera swish-nummer</a>
                 <a href="https://bossan.musikhjalpen.se/" target="blank" id="second-button" style="display: inline-block; padding: 10px 20px; background-color: #009D7E; color: white; text-decoration: none; text-align: center; border-radius: 5px;">Donera via webben</a>
             </div>
