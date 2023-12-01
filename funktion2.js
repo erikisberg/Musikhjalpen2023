@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const widgetHTML = `
         <div id="charity-widget" style="position: fixed; bottom: 10px; left: 10px; z-index: 1000;">
-            <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/6568c05c9172feae0fb2e510_Widget2-01-1.gif" style="width: 100px; height: auto; cursor: pointer;">
+            <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/6569de8483f5f732d08ced6d_widgetgif1.gif" style="width: 100px; height: auto; cursor: pointer;">
         </div>
         <div id="charity-overlay" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1001;">
             <div id="charity-popup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: transparent url('https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/656734d044fdc9f3c641c63a_background.webp') no-repeat center center; background-size: cover; max-width: 650px; padding: 30px; font-family: 'Open Sans', sans-serif; text-align: center; justify-content: center; border-radius: 10px; padding: 30px;">
