@@ -1,3 +1,18 @@
+// Mixpanel tracking
+document.addEventListener('DOMContentLoaded', (event) => {
+    mixpanel.init("7d7d21dd4ea84a7c89e129dfec7b0917");
+    mixpanel.track('Widget Opened');
+    mixpanel.track('Widget Added to Website');
+
+    document.getElementById("copy-phone").addEventListener("click", function(event) {
+        mixpanel.track('Button Pushed', { button: 'Copy Phone' });
+    });
+
+    document.getElementById("second-button").addEventListener("click", function(event) {
+        mixpanel.track('Button Pushed', { button: 'Donera via webben' });
+    });
+});
+
 document.addEventListener('DOMContentLoaded', (event) => {
     (function() {
 
@@ -26,12 +41,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 display: none !important;
             }
             #close-popup {
-                postion: absolute; top: 10px; right: 10px !important;
+                position: absolute; 
+                top: 10px; 
+                right: 10px !important;
+            }
             #mhlogo {
                 width: 80px !important;
-            {
+            }
         }
     </style>`;
+
+    document.body.insertAdjacentHTML('beforeend', alertHTML);
 
     document.head.insertAdjacentHTML('beforeend', mobileStyles);
 
