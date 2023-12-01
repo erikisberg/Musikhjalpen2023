@@ -1,18 +1,3 @@
-// Mixpanel tracking
-document.addEventListener('DOMContentLoaded', (event) => {
-    mixpanel.init("7d7d21dd4ea84a7c89e129dfec7b0917");
-    mixpanel.track('Widget Opened');
-    mixpanel.track('Widget Added to Website');
-
-    document.getElementById("copy-phone").addEventListener("click", function(event) {
-        mixpanel.track('Button Pushed', { button: 'Copy Phone' });
-    });
-
-    document.getElementById("second-button").addEventListener("click", function(event) {
-        mixpanel.track('Button Pushed', { button: 'Donera via webben' });
-    });
-});
-
 document.addEventListener('DOMContentLoaded', (event) => {
     (function() {
 
@@ -65,7 +50,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/6565dfca12f98697371601ea_download-1.webp" id="mhlogo" style="width: 30%; display: block; margin-left: auto; margin-right: auto; margin-top: 0px; ">
                 <h1 style="text-align: center; font-size: 31px; color: white;">Vi stödjer <br> Musikhjälpen 2023</h1>
                 <p style="font-size: 19px; color: white; max-width: 550px; width: 100%; margin: auto;">Mat är en mänsklig rättighet. Trots det dör människor runtom i världen varje dag till följd av undernäring. Omkring var tionde människa vet inte när eller vad de kommer att äta nästa gång. Genom Musikhjälpen 2023 kan alla vara med och bidra till kampen mot hungern.</p>
-                <div id="swishqr" style="width: 100%; max-width:200px; display: block; margin: auto; margin-top: 30px;">
+                <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/6568ca8be53f17c76e8bbf45_swishqr.webp" id="swishqr" style="width: 100%; max-width:200px; display: block; margin: auto; margin-top: 30px;">
                 <div id="buttoncontainer" style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
                 <a href="#" id="copy-phone" style="display: inline-block; padding: 10px 20px; background-color: #009D7E; color: white; text-decoration: none; text-align: center; border-radius: 5px;">Kopiera swish-nummer</a>
                 <a href="https://bossan.musikhjalpen.se/" target="blank" id="second-button" style="display: inline-block; padding: 10px 20px; background-color: #009D7E; color: white; text-decoration: none; text-align: center; border-radius: 5px;">Donera via webben</a>
@@ -77,44 +62,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.body.insertAdjacentHTML('beforeend', alertHTML);
     
         document.getElementById("charity-widget").addEventListener("click", function() {
-            fetch('https://mpc.getswish.net/qrg-swish/api/v1/prefilled', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    format: 'png',
-                    payee: {
-                        value: '9019506',
-                        editable: false
-                    },
-                    amount: {
-                        value: 100.00,
-                        editable: true
-                    },
-                    message: {
-                        value: 'Payment for services',
-                        editable: true
-                    },
-                    size: 200,
-                    border: 4,
-                    transparent: false
-                })
-            })
-            .then(response => {
-                console.log(response); // Log the response
-                return response.blob();
-            })
-            .then(blob => {
-                var url = URL.createObjectURL(blob);
-                var img = document.getElementById("swishqr");
-                console.log(img); // Log the image element
-                if (img) {
-                    img.src = url;
-                }
-            })
-            .catch(error => console.error('Error:', error)); // Log any errors
-
             document.getElementById("charity-overlay").style.display = "block";
         });
     
