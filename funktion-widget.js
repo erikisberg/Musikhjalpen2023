@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // div för alert    
     const alertHTML = `
-    <div id="custom-alert" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #d14430; color: white; padding: 20px; min-width: 190px; border-radius: 10px; display: none; opacity: 0; transition: opacity 0.5s; z-index: 1040; font-family: 'Open Sans', sans-serif; text-align:center; ">
-        Swish-nummer kopierat!👍
+    <div id="custom-alert" style="position: fixed; top: 5%; left: 50%; transform: translate(-50%, -50%); background-color: #009D7E; color: white; padding: 20px; min-width: 210px; border-radius: 10px; display: none; opacity: 0; transition: opacity 0.5s; z-index: 1040; font-family: 'Open Sans', sans-serif; text-align:center; ">
+        Swish-nummer kopierat 👍
     </div>`;
 
     // Styling för mobil
