@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 <h1 style="text-align: center; font-size: 31px; color: white;">Vi stödjer <br> Musikhjälpen 2023</h1>
                 <p style="font-size: 19px; color: white; max-width: 550px; width: 100%; margin: auto;">Mat är en mänsklig rättighet. Trots det dör människor runtom i världen varje dag till följd av undernäring. Omkring var tionde människa vet inte när eller vad de kommer att äta nästa gång. Genom Musikhjälpen 2023 kan alla vara med och bidra till kampen mot hungern.</p>
                 <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/656b7ff8d387405af14fe80f_swish-QR.webp" id="swishqr" style="width: 100%; max-width:200px; display: block; margin: auto; margin-top: 30px; border-radius: 10px;">
+                <p style="font-size: 10px; font-style: italic; color: white; margin-top: 10px;">Radiohjälpens Swish</p>
                 <div id="buttoncontainer" style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
                 <a href="#" id="copy-phone" style="display: inline-block; padding: 10px 20px; background-color: #009D7E; color: white; text-decoration: none; text-align: center; border-radius: 5px;">Kopiera swish-nummer</a>
                 <a href="https://bossan.musikhjalpen.se/" target="blank" id="second-button" style="display: inline-block; padding: 10px 20px; background-color: #009D7E; color: white; text-decoration: none; text-align: center; border-radius: 5px;">Donera via webben</a>
