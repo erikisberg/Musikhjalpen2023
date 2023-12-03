@@ -2,7 +2,7 @@
     "name": "Musikhjälpen-widget-2023",
     "version": "1.0.0",
     "description": "Enkel widget för hemsidor",
-    "main": "funktion-widget.js",
+    "main": "musikhjalpen2023.js",  
     "scripts": {
         "start": "node musikhjalpen2023.js"
     },
