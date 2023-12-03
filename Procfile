@@ -1,0 +1,1 @@
+web: node funktion-widget.js
