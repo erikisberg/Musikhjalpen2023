@@ -1,1 +1,1 @@
-web: node funktion-widget.js
+web: node musikhjalpen2023.js
