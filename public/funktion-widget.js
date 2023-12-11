@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const googleFontLink = `
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <style>
+            #charity-popup * {
+                font-family: 'Open Sans', sans-serif !important;
+            }
+        </style>
     `;
 
     document.head.insertAdjacentHTML('beforeend', googleFontLink);
