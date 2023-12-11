@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/656f871a524700e9457fe076_Widget2-01-1%20(1).gif" style="width: 130px; height: auto; cursor: pointer;">
         </div>
         <div id="charity-overlay" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1001;">
-            <div id="charity-popup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #10826c; max-width: 650px; padding: 30px; font-family: 'Open Sans', sans-serif !important; text-align: center; line-height: 2,68REM !important; justify-content: center; border-radius: 10px; padding: 30px;">
+            <div id="charity-popup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #10826c; max-width: 650px; padding: 30px; font-family: 'Open Sans', sans-serif !important; text-align: center; line-height: Normal !important; justify-content: center; border-radius: 10px; padding: 30px;">
                 <span id="close-popup" style="position: absolute; top: 20px; right: 30px; cursor: pointer; color: white;">Stäng</span>
                 <img src="https://uploads-ssl.webflow.com/5d9cc2c7b5891d21c8901fd2/6565dfca12f98697371601ea_download-1.webp" id="mhlogo" style="width: 30%; display: block; margin-left: auto; margin-right: auto; margin-top: 0px; ">
                 <h1 style="text-align: center; font-size: 31px; color: white;">Vi stödjer <br> Musikhjälpen 2023</h1>
