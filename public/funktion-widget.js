@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 <a href="#" id="copy-phone" style="display: inline-block; padding: 10px 20px; background-color: #009D7E; color: white; text-decoration: none; text-align: center; border-radius: 5px;">Kopiera swish-nummer</a>
                 <a href="https://bossan.musikhjalpen.se/" target="blank" id="second-button" style="display: inline-block; padding: 10px 20px; background-color: #009D7E; color: white; text-decoration: none; text-align: center; border-radius: 5px;">Donera via webben</a>
             </div>
+            <a href="https://www.gofantastic.org/posts/musikhjalpen-2023-widget" target="_blank" style="position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); color: white; font-size: 10px; font-style: italic; text-decoration: none; z-index: 1002;">Lägg till widgeten på er webb</a>
         </div>`;
         
 
